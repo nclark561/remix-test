@@ -3,16 +3,16 @@ import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Remix test" },
-    { name: "description", content: "Customize here" },
+    { title: "Random" },
+    { name: "description", content: "this is a random page" },
   ];
 };
 
-export default function Index() {
+export default function Random() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Remix test</h1>
-      <Link to="/random" prefetch="intent" preventScrollReset>
+      <h1>Random Page</h1>
+      <Link to=".." prefetch="intent" preventScrollReset>
         Click me
       </Link>
     </div>
