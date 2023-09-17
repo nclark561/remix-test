@@ -12,9 +12,14 @@ export default function Random() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Random Page</h1>
-      <Link to=".." prefetch="intent" preventScrollReset>
-        Click me
-      </Link>
+      <div className="flex flex-col">
+        <Link to=".." prefetch="intent" preventScrollReset>
+          Click me
+        </Link>
+        <Link to="../pokemon" prefetch="intent" preventScrollReset>
+          No...Click me
+        </Link>
+      </div>
     </div>
   );
 }
